@@ -8,6 +8,7 @@
 - NPM v11.x
 - Yarn v1.x
 - Vite v6.x
+- irazasyed/telegram-bot-sdk v3.15
 
 # Requirements
 - Stable version of [Docker](https://docs.docker.com/engine/install/)
@@ -20,8 +21,15 @@
 - Clone this repository
 - `make setup`
 
+### run ngrok and change .env:
+- `APP_URL`
+- `TELEGRAM_BOT_TOKEN`
+
 ### From the second time onwards
 - `make up`
+
+### Set webhook
+- `php artisan telegram:webhook --setup`
 
 ### For stopping
 - `make down`
